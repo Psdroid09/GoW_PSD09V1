@@ -8,3 +8,5 @@ Edición de **GoW_PSD09 V1 sin diagnósticos ni registros**.
 - Mantiene el cambio automático de FPS y las comprobaciones necesarias de compatibilidad.
 
 **Compatible exclusivamente con God of War I EU v1.00 (PCSF00438).**
+
+(Para ayudar a detectar errores, usa la release anterior con diagnóstico).
