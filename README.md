@@ -1,2 +1,58 @@
-# GoW_PSD09V1
-GoW1 PSVita con resolución nativa y desbloqueo a 60 fps sin necesitar VitaGrafix o Repatch 
+# GoW_PSD09V1 — God of War I para PS Vita
+
+**Versión final estable** del plugin GoW_PSD09, publicada de forma independiente a partir de la **v22** que funcionó en una PS Vita real.
+
+> Compatible exclusivamente con **God of War I**, de **God of War Collection**, **EU v1.00 / PCSF00438**. No se ha verificado en otras regiones, revisiones ni God of War II.
+
+
+<p align="center">
+  <img src="assets/aviso-ia.svg" width="100%" alt="ESTE PLUGIN FUE REALIZADO CON AYUDA DE LA IA, ASI QUE NO LEO LLOROS">
+</p>
+
+## Características
+
+- Resolución nativa **960 × 544**, sin VitaGrafix ni rePatch.
+- **FPS desbloqueados y variables durante la partida**; no obliga al juego a funcionar a 60 FPS.
+- **Menú principal, START y SELECT a aproximadamente 30 FPS** (ritmo original) para evitar animaciones aceleradas y parpadeo del texto.
+- Cambio entre modos **automático**; no usa combinaciones de botones.
+- No intercepta Flash ni cambia el reloj de sus animaciones.
+- Solo se ejecuta en el proceso compatible de God of War I.
+
+## Descargar e instalar
+
+1. Necesitas una PS Vita con **HENkaku/taiHEN** y una copia compatible de God of War Collection, región europea **PCSF00438**, versión 1.00.
+2. Guarda una copia de tu `ur0:tai/GoW_PSD09.suprx` anterior y de `ur0:tai/config.txt`.
+3. Copia el archivo descargado `GoW_PSD09.suprx` a `ur0:tai/`.
+4. En `ur0:tai/config.txt`, coloca una sola entrada bajo el identificador del juego:
+
+```ini
+*PCSF00438
+ur0:tai/GoW_PSD09.suprx
+```
+
+5. Evita otros parches simultáneos de FPS o resolución para este juego. Reinicia la Vita y ejecuta God of War I.
+
+El plugin escribe mensajes de instalación y cambios de modo en `ux0:data/GoW_PSD09_v22_MenuSafe.txt`.
+
+**Si se presenta cualquier error o problema con el plugin, envía el archivo `ux0:data/GoW_PSD09_v22_MenuSafe.txt` para poder revisar lo ocurrido.**
+
+## Comportamiento
+
+| Estado | Resolución | FPS |
+|---|---|---|
+| Partida | 960×544 | Desbloqueados, variables |
+| Menú principal | 960×544 | Aproximadamente 30 |
+| START | 960×544 | Aproximadamente 30 |
+| SELECT | 960×544 | Aproximadamente 30 |
+
+El límite de los menús es deliberado: las versiones experimentales que intentaron animarlos a 60 FPS causaron aceleración o parpadeo. Esta edición conserva el comportamiento de la **v22 comprobada por el usuario**.
+
+## Mi canal de YouTube
+
+📺 **¡Apoya este proyecto!** Si te gustó el plugin, te invito a visitar y suscribirte a mi canal de YouTube: **[PsDroid09](https://www.youtube.com/@PsDroid09)**.
+
+## Contribución
+
+**Único autor del proyecto: [Psdroid09](https://github.com/Psdroid09).**
+
+Este repositorio público distribuye solamente el plugin compilado; **el código fuente no se incluye**. No contiene archivos, datos ni recursos de God of War.
