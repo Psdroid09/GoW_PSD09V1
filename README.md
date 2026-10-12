@@ -24,7 +24,7 @@
 **[Descargar la publicación «GoW_PSD09 V1 — Sin diagnóstico»](https://github.com/Psdroid09/GoW_PSD09V1/releases/tag/v1-sin-diagnostico)**. La publicación anterior se conserva por separado.
 
 1. Necesitas una PS Vita con **HENkaku/taiHEN** y una copia compatible de God of War Collection, región europea **PCSF00438**, versión 1.00.
-2. Guarda una copia de tu `ur0:tai/GoW_PSD09.suprx` anterior y de `ur0:tai/config.txt`.
+2. Guarda una copia de tu `ur0:tai/config.txt`.
 3. Copia el archivo descargado `GoW_PSD09.suprx` a `ur0:tai/`.
 4. En `ur0:tai/config.txt`, coloca una sola entrada bajo el identificador del juego:
 
