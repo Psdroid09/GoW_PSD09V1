@@ -12,11 +12,8 @@
 ## Características
 
 - Resolución nativa **960 × 544**, sin VitaGrafix ni rePatch.
-- **FPS desbloqueados y variables durante la partida**; no obliga al juego a funcionar a 60 FPS.
-- **Menú principal, START y SELECT a aproximadamente 30 FPS** (ritmo original) para evitar animaciones aceleradas y parpadeo del texto.
-- Cambio entre modos **automático**; no usa combinaciones de botones.
-- No intercepta Flash ni cambia el reloj de sus animaciones.
-- Solo se ejecuta en el proceso compatible de God of War I
+- **FPS desbloqueados y variables durante la partida**; no obliga al juego a funcionar a 60 FPS, solo quita el bloqueo de 30 fps que viene por defecto.
+  
 
 ## Descargar e instalar
 
