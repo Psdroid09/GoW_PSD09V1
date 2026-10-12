@@ -9,10 +9,10 @@ body:
         La edición **Sin diagnóstico** no crea archivos de registro; no es necesario adjuntarlos.
         Para comentarios generales, también puedes participar en el [hilo de comentarios](https://github.com/Psdroid09/GoW_PSD09V1/issues/1).
   - type: input
-    id: release
+    id: version-plugin
     attributes:
-      label: "Release utilizada"
-      description: "Indica si usaste Sin diagnóstico o la release anterior."
+      label: "Versión del plugin utilizada"
+      description: "Indica si utilizaste la versión sin diagnóstico o la versión anterior."
       placeholder: "Ej.: v1-sin-diagnostico"
     validations:
       required: true
@@ -43,14 +43,14 @@ body:
   - type: textarea
     id: configuracion
     attributes:
-      label: "Configuración y otros plugins"
-      description: "Si aplica, indica modelo de PS Vita y plugins activos (PSVshell, CapUnlocker, etc.)."
+      label: "Configuración y otros complementos"
+      description: "Si corresponde, indica el modelo de PS Vita y los complementos activos (PSVshell, CapUnlocker, etc.)."
     validations:
       required: false
   - type: textarea
     id: pruebas
     attributes:
       label: "Capturas, video u observaciones adicionales"
-      description: "Opcional. Puedes probar la release anterior para ayudar a detectar errores. No compartas datos personales ni archivos del juego."
+      description: "Opcional. Puedes probar la versión anterior para ayudar a detectar errores. No compartas datos personales ni archivos del juego."
     validations:
       required: false
