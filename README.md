@@ -1,6 +1,6 @@
 # GoW_PSD09V1 — God of War I para PS Vita — Sin diagnóstico
 
-**Edición sin diagnóstico** del plugin GoW_PSD09 V1, basada en la **v22** que funcionó en una PS Vita real. Esta edición elimina los registros y sus rutinas auxiliares; conserva los parches y el control automático de FPS de la V1. Compilada y revisada estáticamente; esta nueva compilación aún requiere prueba en una PS Vita real.
+**Versión sin diagnóstico** del plugin GoW_PSD09 V1, basada en la **v22**, probada en una PS Vita real. Esta edición elimina los registros y las funciones auxiliares relacionadas con ellos, pero conserva los parches y el control automático de FPS de la V1. Se compiló y se revisó su estructura, aunque esta nueva versión todavía necesita pruebas en una PS Vita real.
 
 > Compatible exclusivamente con **God of War I**, de **God of War Collection**, **EU v1.00 / PCSF00438**. No se ha verificado en otras regiones, revisiones ni God of War II.
 
@@ -21,7 +21,7 @@
 
 ## Descargar e instalar
 
-**[Descargar la publicación «GoW_PSD09 V1 — Sin diagnóstico»](https://github.com/Psdroid09/GoW_PSD09V1/releases/tag/v1-sin-diagnostico)**. La publicación anterior se conserva por separado.
+**[Descargar la versión «GoW_PSD09 V1 — Sin diagnóstico»](https://github.com/Psdroid09/GoW_PSD09V1/releases/tag/v1-sin-diagnostico)**. La versión anterior continúa disponible por separado.
 
 1. Necesitas una PS Vita con **HENkaku/taiHEN** y una copia compatible de God of War Collection, región europea **PCSF00438**, versión 1.00.
 2. Guarda una copia de tu `ur0:tai/config.txt`.
@@ -48,7 +48,7 @@ Conserva las comprobaciones de compatibilidad necesarias antes de aplicar los pa
 | START | 960×544 | Aproximadamente 30 |
 | SELECT | 960×544 | Aproximadamente 30 |
 
-El límite de los menús es deliberado: las versiones experimentales que intentaron animarlos a 60 FPS causaron aceleración o parpadeo. Esta edición conserva el comportamiento de la **v22 comprobada por el usuario**.
+El límite de los menús es intencional: las versiones experimentales que intentaron mostrar sus animaciones a 60 FPS provocaron aceleración o parpadeos. Esta edición conserva el comportamiento de la **v22, probado en una PS Vita real**.
 
 ## Reportes de errores y comentarios
 
@@ -57,7 +57,7 @@ El límite de los menús es deliberado: las versiones experimentales que intenta
 - 💬 **[Dejar un comentario o consultar un error](https://github.com/Psdroid09/GoW_PSD09V1/issues/1)**: hilo abierto para compartir experiencias, dudas, capturas y videos.
 - 🐞 **[Reportar un error por separado](https://github.com/Psdroid09/GoW_PSD09V1/issues/new?template=bug_report.yml)**: formulario para describir un fallo y darle seguimiento.
 
-Incluye, si puedes, la versión del plugin, la región del juego, cómo ocurrió el error y los plugins relacionados. **Esta edición no genera diagnósticos.** Para ayudar a detectar errores, puedes **usar la release anterior** y compartir los resultados.
+Incluye, si puedes, la versión del plugin, la región del juego, cómo ocurrió el error y los plugins relacionados. **Esta edición no genera diagnósticos.** Para ayudar a identificar los errores, puedes **probar la versión anterior, que incluye diagnósticos**, y compartir los resultados.
 
 ## Mi canal de YouTube
 
