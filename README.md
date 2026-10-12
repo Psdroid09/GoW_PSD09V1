@@ -28,7 +28,7 @@
 1. Necesitas una PS Vita con **HENkaku/taiHEN** y una copia compatible de God of War Collection, región europea **PCSF00438**, versión 1.00.
 2. Guarda una copia de tu `ur0:tai/config.txt`.
 3. Copia el archivo descargado `GoW_PSD09.suprx` a `ur0:tai/`.
-4. En `ur0:tai/config.txt`, coloca una sola entrada bajo el identificador del juego:
+4. En `ur0:tai/config.txt`, agrega **al final de todo el archivo** el ID del juego y la ruta del plugin, como se muestra a continuación. **Si ya tienes la sección `*ALL`, coloca ambas líneas justo arriba de `*ALL`**, sin incluirlas dentro de esa sección:
 
 ```ini
 *PCSF00438
