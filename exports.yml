@@ -1,0 +1,8 @@
+GoW_PSD09:
+  attributes: 0
+  version:
+    major: 1
+    minor: 3
+  main:
+    start: module_start
+    stop: module_stop

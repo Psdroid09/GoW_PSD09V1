@@ -1,0 +1,9 @@
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.elf
+*.o
+*.map
+.DS_Store
+Thumbs.db

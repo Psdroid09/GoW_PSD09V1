@@ -1,0 +1,49 @@
+name: Build GoW_PSD09V1
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/**'
+      - 'CMakeLists.txt'
+      - 'exports.yml'
+      - '.github/workflows/build.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: vitasdk/vitasdk:2026.08
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake
+      - name: Build
+        run: cmake --build build --parallel 2
+      - name: Verify PS Vita SELF
+        run: |
+          test -s build/GoW_PSD09.suprx
+          test "$(head -c 4 build/GoW_PSD09.suprx | od -An -tx1 | tr -d ' \n')" = "53434500"
+      - name: Publish binary in repository
+        run: |
+          mkdir -p release
+          cp build/GoW_PSD09.suprx release/GoW_PSD09.suprx
+          (cd release && sha256sum GoW_PSD09.suprx > SHA256SUMS.txt)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add release/GoW_PSD09.suprx release/SHA256SUMS.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish compiled GoW_PSD09V1 stable plugin"
+            git push origin HEAD:main
+          fi
+      - name: Upload compiled plugin
+        uses: actions/upload-artifact@v4
+        with:
+          name: GoW_PSD09V1
+          path: build/GoW_PSD09.suprx
+          if-no-files-found: error
