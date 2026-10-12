@@ -1,6 +1,6 @@
-# GoW_PSD09V1 — God of War I para PS Vita — Sin diagnóstico
+# GoW_PSD09V1 — God of War I para PS Vita
 
-**Versión sin diagnóstico** del plugin GoW_PSD09 V1, basada en la **v22**, probada en una PS Vita real. Esta edición elimina los registros y las funciones auxiliares relacionadas con ellos, pero conserva los parches y el control automático de FPS de la V1. Se compiló y se revisó su estructura, aunque esta nueva versión todavía necesita pruebas en una PS Vita real.
+**GoW_PSD09 V1** es un complemento para God of War I en PS Vita que permite utilizar la resolución nativa y ajustar automáticamente el comportamiento de los FPS entre los menús y la partida.
 
 > Compatible exclusivamente con **God of War I**, de **God of War Collection**, **EU v1.00 / PCSF00438**. No se ha verificado en otras regiones, revisiones ni God of War II.
 
@@ -21,7 +21,7 @@
 
 ## Descargar e instalar
 
-**[Descargar la versión «GoW_PSD09 V1 — Sin diagnóstico»](https://github.com/Psdroid09/GoW_PSD09V1/releases/tag/v1-sin-diagnostico)**. La versión anterior continúa disponible por separado.
+**[Descargar GoW_PSD09 V1](https://github.com/Psdroid09/GoW_PSD09V1/releases/tag/v1-sin-diagnostico)**.
 
 1. Necesitas una PS Vita con **HENkaku/taiHEN** y una copia compatible de God of War Collection, región europea **PCSF00438**, versión 1.00.
 2. Guarda una copia de tu `ur0:tai/config.txt`.
@@ -34,10 +34,6 @@ ur0:tai/GoW_PSD09.suprx
 ```
 
 5. Evita otros parches simultáneos de FPS o resolución para este juego. Reinicia la Vita y ejecuta God of War I.
-
-Esta edición **no genera diagnósticos ni registra cambios de modo**. Si quedó un archivo `ux0:data/GoW_PSD09_v22_MenuSafe.txt` de una versión anterior, puedes borrarlo manualmente; esta edición no lo crea, modifica ni elimina.
-
-Conserva las comprobaciones de compatibilidad necesarias antes de aplicar los parches y la lectura del estado del juego para cambiar automáticamente entre menú y partida.
 
 ## Comportamiento
 
@@ -56,8 +52,6 @@ El límite de los menús es intencional: las versiones experimentales que intent
 
 - 💬 **[Dejar un comentario o consultar un error](https://github.com/Psdroid09/GoW_PSD09V1/issues/1)**: hilo abierto para compartir experiencias, dudas, capturas y videos.
 - 🐞 **[Reportar un error por separado](https://github.com/Psdroid09/GoW_PSD09V1/issues/new?template=bug_report.yml)**: formulario para describir un fallo y darle seguimiento.
-
-Incluye, si puedes, la versión del plugin, la región del juego, cómo ocurrió el error y los plugins relacionados. **Esta edición no genera diagnósticos.** Para ayudar a identificar los errores, puedes **probar la versión anterior, que incluye diagnósticos**, y compartir los resultados.
 
 ## Mi canal de YouTube
 
