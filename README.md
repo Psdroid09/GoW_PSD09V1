@@ -1,6 +1,6 @@
-# GoW_PSD09V1 — God of War I para PS Vita
+# GoW_PSD09V1 — God of War I para PS Vita — Sin diagnóstico
 
-**Versión final estable** del plugin GoW_PSD09, publicada de forma independiente a partir de la **v22** que funcionó en una PS Vita real.
+**Edición sin diagnóstico** del plugin GoW_PSD09 V1, basada en la **v22** que funcionó en una PS Vita real. Esta edición elimina los registros y sus rutinas auxiliares; conserva los parches y el control automático de FPS de la V1. Compilada y revisada estáticamente; esta nueva compilación aún requiere prueba en una PS Vita real.
 
 > Compatible exclusivamente con **God of War I**, de **God of War Collection**, **EU v1.00 / PCSF00438**. No se ha verificado en otras regiones, revisiones ni God of War II.
 
@@ -17,8 +17,11 @@
 - Cambio entre modos **automático**; no usa combinaciones de botones.
 - No intercepta Flash ni cambia el reloj de sus animaciones.
 - Solo se ejecuta en el proceso compatible de God of War I.
+- **Sin diagnósticos, registros, telemetría ni volcados de memoria.** No crea ni escribe archivos de diagnóstico.
 
 ## Descargar e instalar
+
+**[Descargar la publicación «GoW_PSD09 V1 — Sin diagnóstico»](https://github.com/Psdroid09/GoW_PSD09V1/releases/tag/v1-sin-diagnostico)**. La publicación anterior se conserva por separado.
 
 1. Necesitas una PS Vita con **HENkaku/taiHEN** y una copia compatible de God of War Collection, región europea **PCSF00438**, versión 1.00.
 2. Guarda una copia de tu `ur0:tai/GoW_PSD09.suprx` anterior y de `ur0:tai/config.txt`.
@@ -32,9 +35,9 @@ ur0:tai/GoW_PSD09.suprx
 
 5. Evita otros parches simultáneos de FPS o resolución para este juego. Reinicia la Vita y ejecuta God of War I.
 
-El plugin escribe mensajes de instalación y cambios de modo en `ux0:data/GoW_PSD09_v22_MenuSafe.txt`.
+Esta edición **no genera diagnósticos ni registra cambios de modo**. Si quedó un archivo `ux0:data/GoW_PSD09_v22_MenuSafe.txt` de una versión anterior, puedes borrarlo manualmente; esta edición no lo crea, modifica ni elimina.
 
-**Si se presenta cualquier error o problema con el plugin, envía el archivo `ux0:data/GoW_PSD09_v22_MenuSafe.txt` para poder revisar lo ocurrido.**
+Conserva las comprobaciones de compatibilidad necesarias antes de aplicar los parches y la lectura del estado del juego para cambiar automáticamente entre menú y partida.
 
 ## Comportamiento
 

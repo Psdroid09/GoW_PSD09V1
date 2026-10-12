@@ -1,0 +1,31 @@
+name: Publicar plugin sin diagnóstico
+
+on:
+  push:
+    branches: [main]
+    paths: [release/NOTAS_SIN_DIAGNOSTICO.md]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar integridad del plugin
+        working-directory: release
+        run: sha256sum --check SHA256SUMS.txt
+      - name: Crear publicación nueva
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create v1-sin-diagnostico
+          release/GoW_PSD09.suprx
+          release/SHA256SUMS.txt
+          --target "$GITHUB_SHA"
+          --title "GoW_PSD09 V1 — Sin diagnóstico"
+          --notes-file release/NOTAS_SIN_DIAGNOSTICO.md
+          --latest
