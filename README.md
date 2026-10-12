@@ -28,12 +28,30 @@
 1. Necesitas una PS Vita con **HENkaku/taiHEN** y una copia compatible de God of War Collection, región europea **PCSF00438**, versión 1.00.
 2. Guarda una copia de tu `ur0:tai/config.txt`.
 3. Copia el archivo descargado `GoW_PSD09.suprx` a `ur0:tai/`.
-4. En `ur0:tai/config.txt`, agrega **al final de todo el archivo** el ID del juego y la ruta del plugin, como se muestra a continuación. **Si ya tienes la sección `*ALL`, coloca ambas líneas justo arriba de `*ALL`**, sin incluirlas dentro de esa sección:
+4. En `ur0:tai/config.txt`, agrega el **ID del juego** y la **ruta del plugin** según corresponda:
 
-```ini
-*PCSF00438
-ur0:tai/GoW_PSD09.suprx
-```
+   **Ejemplo 1: Si NO tienes una sección `*ALL`**, coloca estas dos líneas **al final de todo tu `config.txt`**:
+
+   ```ini
+   # Aquí terminan tus secciones y plugins actuales
+
+   *PCSF00438
+   ur0:tai/GoW_PSD09.suprx
+   ```
+
+   **Ejemplo 2: Si SÍ tienes una sección `*ALL`**, coloca el ID del juego y el plugin **justo arriba de `*ALL`**, manteniendo los plugins de `*ALL` en su propia sección:
+
+   ```ini
+   # Aquí terminan tus secciones anteriores
+
+   *PCSF00438
+   ur0:tai/GoW_PSD09.suprx
+
+   *ALL
+   # Aquí permanecen los plugins que ya tienes en *ALL
+   ```
+
+   **Importante:** Los comentarios que comienzan con `#` son solo indicaciones de ejemplo. **No borres tus otras secciones ni los plugins que ya tienes configurados.** Agrega `*PCSF00438` una sola vez y evita duplicar el plugin.
 
 5. Evita otros parches simultáneos de FPS o resolución para este juego. Reinicia la Vita y ejecuta God of War I.
 
