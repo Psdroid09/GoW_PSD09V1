@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1666" height="944" viewBox="0 0 1666 944">
+<rect width="1666" height="944" fill="#000"/>
+<g fill="#fff" font-family="Arial,Helvetica,sans-serif">
+<text x="37" y="64" font-size="53">VitaGrafix Configurator</text>
+<text x="1315" y="56" font-size="39">12:34</text><text x="1456" y="56" font-size="39">80%</text>
+</g>
+<rect x="1543" y="26" width="63" height="31" rx="5" fill="none" stroke="#fff" stroke-width="4"/>
+<rect x="1607" y="36" width="6" height="12" rx="2" fill="#fff"/>
+<rect x="1551" y="32" width="46" height="19" fill="#79d34a"/>
+<path d="M0 92 H1666" stroke="#273145" stroke-width="2"/>
+<rect x="426" y="114" width="785" height="69" fill="#0951f5"/>
+<g fill="#fff" font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+<text x="819" y="165" font-size="45">God of War Collection</text>
+<text x="384" y="167" font-size="70">‹</text>
+<text x="1251" y="167" font-size="70">›</text>
+</g>
+<rect x="124" y="237" width="1388" height="75" rx="1" fill="#0951f5"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#fff" font-size="43">
+<text x="163" y="289" font-weight="bold">Enabled</text>
+<text x="859" y="289">OFF</text>
+<text x="163" y="369">OSD</text>
+<text x="859" y="369">OFF</text>
+<text x="163" y="449">Framebuffer</text>
+<text x="859" y="449">OFF</text>
+<text x="1234" y="449" font-size="37" fill="#c9c9c9">(Default: OFF)</text>
+<text x="163" y="529">FPS Cap</text>
+<text x="859" y="529">OFF</text>
+<text x="1234" y="529" font-size="37" fill="#c9c9c9">(Default: OFF)</text>
+<text x="167" y="681">Save Config</text>
+</g>
+<g fill="#c4c9d3">
+<path d="M740 252 l-24 22 24 22z M1047 252 l24 22 -24 22z"/>
+<path d="M740 332 l-24 22 24 22z M1047 332 l24 22 -24 22z"/>
+<path d="M740 412 l-24 22 24 22z M1047 412 l24 22 -24 22z"/>
+<path d="M740 492 l-24 22 24 22z M1047 492 l24 22 -24 22z"/>
+</g>
+<line x1="121" x2="1517" y1="600" y2="600" stroke="#273145" stroke-width="2"/>
+<line x1="0" x2="1666" y1="783" y2="783" stroke="#273145" stroke-width="2"/>
+<text x="40" y="867" font-family="Arial,Helvetica,sans-serif" font-size="40" fill="#fff">Regions Supported: [Europe] [USA] [Japan]</text>
+<text x="1634" y="927" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#999">EJEMPLO ILUSTRATIVO</text>
+</svg>
