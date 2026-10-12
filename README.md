@@ -11,6 +11,8 @@
 
 ## Características
 
+> ⚠️ **ADVERTENCIA:** Antes de instalar el plugin, si estás usando **VitaGrafix**, desactiva las opciones de **Framebuffer** y **FPS** para **God of War Collection**, para evitar posibles conflictos con el funcionamiento del plugin.
+
 - Resolución nativa **960 × 544**, sin VitaGrafix ni rePatch.
 - **FPS desbloqueados y variables durante la partida**; no obliga al juego a funcionar a 60 FPS, solo quita el bloqueo de 30 fps que viene por defecto.
   
