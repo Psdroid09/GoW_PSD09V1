@@ -16,8 +16,7 @@
 - **Menú principal, START y SELECT a aproximadamente 30 FPS** (ritmo original) para evitar animaciones aceleradas y parpadeo del texto.
 - Cambio entre modos **automático**; no usa combinaciones de botones.
 - No intercepta Flash ni cambia el reloj de sus animaciones.
-- Solo se ejecuta en el proceso compatible de God of War I.
-- **Sin diagnósticos, registros, telemetría ni volcados de memoria.** No crea ni escribe archivos de diagnóstico.
+- Solo se ejecuta en el proceso compatible de God of War I
 
 ## Descargar e instalar
 
