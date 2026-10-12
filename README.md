@@ -21,7 +21,7 @@
 
 ![Ejemplo de VitaGrafix Configurator para God of War Collection con Enabled, Framebuffer y FPS Cap desactivados](assets/vitagrafix-gow-desactivado.svg)
 
-*Imagen ilustrativa de la configuración recomendada.*
+
 
 **[Descargar GoW_PSD09 V1](https://github.com/Psdroid09/GoW_PSD09V1/releases/tag/v1-sin-diagnostico)**.
 
