@@ -11,13 +11,17 @@
 
 ## Características
 
-> ⚠️ **ADVERTENCIA:** Antes de instalar el plugin, si estás usando **VitaGrafix**, desactiva las opciones de **Framebuffer** y **FPS** para **God of War Collection**, para evitar posibles conflictos con el funcionamiento del plugin.
-
 - Resolución nativa **960 × 544**, sin VitaGrafix ni rePatch.
 - **FPS desbloqueados y variables durante la partida**; no obliga al juego a funcionar a 60 FPS, solo quita el bloqueo de 30 fps que viene por defecto.
   
 
 ## Descargar e instalar
+
+> ⚠️ **ADVERTENCIA:** Antes de instalar el plugin, si utilizas **VitaGrafix**, desactiva **Enabled** para **God of War Collection** y deja las opciones **Framebuffer** y **FPS Cap** en **OFF** para evitar posibles conflictos.
+
+![Ejemplo de VitaGrafix Configurator para God of War Collection con Enabled, Framebuffer y FPS Cap desactivados](assets/vitagrafix-gow-desactivado.svg)
+
+*Imagen ilustrativa de la configuración recomendada.*
 
 **[Descargar GoW_PSD09 V1](https://github.com/Psdroid09/GoW_PSD09V1/releases/tag/v1-sin-diagnostico)**.
 
