@@ -50,6 +50,15 @@ Conserva las comprobaciones de compatibilidad necesarias antes de aplicar los pa
 
 El límite de los menús es deliberado: las versiones experimentales que intentaron animarlos a 60 FPS causaron aceleración o parpadeo. Esta edición conserva el comportamiento de la **v22 comprobada por el usuario**.
 
+## Reportes de errores y comentarios
+
+¿Encontraste algún problema con el plugin o tienes una sugerencia?
+
+- 💬 **[Dejar un comentario o consultar un error](https://github.com/Psdroid09/GoW_PSD09V1/issues/1)**: hilo abierto para compartir experiencias, dudas, capturas y videos.
+- 🐞 **[Reportar un error por separado](https://github.com/Psdroid09/GoW_PSD09V1/issues/new?template=bug_report.yml)**: formulario para describir un fallo y darle seguimiento.
+
+Incluye, si puedes, la versión del plugin, la región del juego, cómo ocurrió el error y los plugins relacionados. **Esta edición no genera diagnósticos.** Para ayudar a detectar errores, puedes **usar la release anterior** y compartir los resultados.
+
 ## Mi canal de YouTube
 
 📺 **¡Apoya este proyecto!** Si te gustó el plugin, te invito a visitar y suscribirte a mi canal de YouTube: **[PsDroid09](https://www.youtube.com/@PsDroid09)**.
