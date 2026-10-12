@@ -1,0 +1,56 @@
+name: "🐞 Reportar un error"
+description: "Cuéntanos qué problema encontraste en GoW_PSD09 V1."
+title: "[Error] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar **GoW_PSD09 V1**.
+        La edición **Sin diagnóstico** no crea archivos de registro; no es necesario adjuntarlos.
+        Para comentarios generales, también puedes participar en el [hilo de comentarios](https://github.com/Psdroid09/GoW_PSD09V1/issues/1).
+  - type: input
+    id: release
+    attributes:
+      label: "Release utilizada"
+      description: "Indica si usaste Sin diagnóstico o la release anterior."
+      placeholder: "Ej.: v1-sin-diagnostico"
+    validations:
+      required: true
+  - type: input
+    id: version-juego
+    attributes:
+      label: "Juego y versión"
+      description: "Compatibilidad prevista: God of War I, EU v1.00 (PCSF00438)."
+      placeholder: "Ej.: God of War I - PCSF00438 - EU v1.00"
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: "¿Qué error encontraste?"
+      description: "Explica qué pasó y qué esperabas que ocurriera."
+      placeholder: "Describe el error..."
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: "Pasos para reproducirlo"
+      description: "Explica cómo llegar al error, si se repite."
+      placeholder: "1. Abrí el juego...\n2. Entré al menú...\n3. Ocurrió el problema..."
+    validations:
+      required: false
+  - type: textarea
+    id: configuracion
+    attributes:
+      label: "Configuración y otros plugins"
+      description: "Si aplica, indica modelo de PS Vita y plugins activos (PSVshell, CapUnlocker, etc.)."
+    validations:
+      required: false
+  - type: textarea
+    id: pruebas
+    attributes:
+      label: "Capturas, video u observaciones adicionales"
+      description: "Opcional. Puedes probar la release anterior para ayudar a detectar errores. No compartas datos personales ni archivos del juego."
+    validations:
+      required: false
