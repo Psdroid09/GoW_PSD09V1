@@ -34,6 +34,7 @@ jobs:
           mkdir -p release
           cp build/GoW_PSD09.suprx release/GoW_PSD09.suprx
           (cd release && sha256sum GoW_PSD09.suprx > SHA256SUMS.txt)
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add release/GoW_PSD09.suprx release/SHA256SUMS.txt
