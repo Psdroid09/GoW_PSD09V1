@@ -2,7 +2,7 @@
 
 **GoW_PSD09 V1** es un complemento para God of War I en PS Vita que permite utilizar la resolución nativa y ajustar automáticamente el comportamiento de los FPS entre los menús y la partida.
 
-> Compatible exclusivamente con **God of War I**, de **God of War Collection**, **EU v1.00 / PCSF00438**. No se ha verificado en otras regiones, revisiones ni God of War II.
+> Compatible exclusivamente con **God of War I**, de **God of War Collection**, **EU v1.00 / PCSF00438**. No se ha verificado en otras regiones.
 
 
 <p align="center">
