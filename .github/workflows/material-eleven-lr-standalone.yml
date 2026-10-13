@@ -1,0 +1,56 @@
+name: Material Eleven LR (prueba aislada)
+on:
+  push:
+    branches: [material-eleven-lr-test-build]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: vitasdk/vitasdk:2026.08
+    steps:
+      - name: Obtener codigo original de Material-Eleven 3.9.0
+        run: |
+          git clone --depth 1 --branch v3.9.0 https://github.com/Perroabuelo/Material-Eleven.git material-eleven
+
+      - name: Habilitar lectura extendida de L y R
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("material-eleven/source/utils.c")
+          s = p.read_text()
+          header = "#include <psp2/common_dialog.h>\n"
+          assert s.count(header) == 1, "No coincide cabecera source/utils.c"
+          s = s.replace(header, header + "#include <psp2/ctrl.h>\n", 1)
+          old = (
+              "\tmemset(&pad, 0, sizeof(SceCtrlData));\n"
+              "\tsceCtrlPeekBufferPositive(0, &pad, 1);\n"
+          )
+          new = old + (
+              "\n\t// Experimento: incluir L/R de la lectura extendida sin cambiar otros botones.\n"
+              "\t// No esta confirmado que funcione con la pantalla apagada.\n"
+              "\tSceCtrlData ext_pad;\n"
+              "\tmemset(&ext_pad, 0, sizeof(ext_pad));\n"
+              "\tif (screen_off.enabled &&\n"
+              "\t    sceCtrlPeekBufferPositiveExt(0, &ext_pad, 1) > 0)\n"
+              "\t\tpad.buttons |= ext_pad.buttons & (SCE_CTRL_LTRIGGER | SCE_CTRL_RTRIGGER);\n"
+          )
+          assert s.count(old) == 1, "No coincide lectura de mandos en source/utils.c"
+          p.write_text(s.replace(old, new, 1))
+          print("Parche aplicado")
+          PY
+
+      - name: Compilar con VitaSDK
+        run: |
+          cmake -S material-eleven -B material-eleven/build
+          cmake --build material-eleven/build -j"$(nproc)"
+          test -s material-eleven/build/ElevenMPV.vpk
+
+      - name: Entregar VPK de prueba
+        uses: actions/upload-artifact@v4
+        with:
+          name: Material-Eleven-3.9.0-LR-TEST-VPK
+          path: material-eleven/build/ElevenMPV.vpk
+          if-no-files-found: error
