@@ -23,9 +23,9 @@ jobs:
         shell: bash
         run: |
           gh api --method PATCH repos/Psdroid09/GoW_PSD09V1/releases/420372939 \
-            -f 'name=GoW_PSDV2 — God of War Collection (sin diagnósticos)' \
+            -f 'name=GoW_PSDV2 — God of War Collection' \
             -f "body=$(cat release/NOTAS_V2.md)" \
-            -f tag_name=v2.0-sin-logs \
+            -f tag_name=v2.0 \
             -f target_commitish=93165164422b521c1925226e7468cecc807dde92 \
             -F prerelease=false \
             --jq '{name: .name, prerelease: .prerelease, html_url: .html_url}'
