@@ -1,0 +1,106 @@
+name: Publicar GoW_PSDV2 (preliminar)
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publicar-v2.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Preparar archivos y verificar integridad
+        shell: bash
+        run: |
+          cat > GoW_PSDV2.zip.b64 <<'B64'
+          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
+          B64
+          base64 -d GoW_PSDV2.zip.b64 > GoW_PSDV2_GoW2_30FPS_Sin_Logs.zip
+          unzip -p GoW_PSDV2_GoW2_30FPS_Sin_Logs.zip GoW_PSDV2.suprx > GoW_PSDV2.suprx
+          echo '2b9931a08ddb861bc3b0ac5bb430e533f5a16309403d7159f0fb2ad948aae90b  GoW_PSDV2.suprx' | sha256sum -c -
+      - name: Publicar Release preliminar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          cat > release-notes.md <<'NOTES'
+          ## GoW_PSDV2 — Edición de prueba sin diagnósticos
+          
+          Versión **experimental** para God of War Collection en PS Vita. **No se ha probado esta compilación en una consola real; el soporte de las regiones EU y USA no está confirmado.**
+          
+          ### Cambios previstos
+          - Resolución de ambos juegos a 960 × 544.
+          - God of War I: FPS desbloqueados durante la partida, con menús a 30 FPS para evitar aceleración.
+          - God of War II: 30 FPS originales.
+          - Sin generación de archivos de diagnóstico ni registros.
+          - Objetivo: soporte para EU PCSF00438 y USA PCSA00126 (pendiente de confirmar).
+          
+          ### Instalación
+          1. Haz copia de seguridad de `ur0:tai/config.txt` y de cualquier plugin anterior.
+          2. Copia `GoW_PSDV2.suprx` a `ur0:tai/`.
+          3. Añádelo una sola vez en la sección del ID de tu región:
+             - EU: `*PCSF00438` y debajo `ur0:tai/GoW_PSDV2.suprx`.
+             - USA: `*PCSA00126` y debajo `ur0:tai/GoW_PSDV2.suprx`.
+          4. No ejecutes simultáneamente otra versión del plugin. Desactiva los cambios de FPS y framebuffer de GoW en VitaGrafix.
+          5. Reinicia la consola y comprueba primero los menús y la partida.
+          
+          Si falla, restaura tu configuración anterior. Los cambios de rendimiento y compatibilidad quedan pendientes de pruebas.
+          
+          **Archivo:** `GoW_PSDV2.suprx` | **SHA-256:** `2b9931a08ddb861bc3b0ac5bb430e533f5a16309403d7159f0fb2ad948aae90b`
+          
+          Proyecto: [Psdroid09](https://github.com/Psdroid09) · [YouTube PsDroid09](https://www.youtube.com/@PsDroid09)
+          NOTES
+          gh release create v2.0-beta-sin-logs GoW_PSDV2.suprx GoW_PSDV2_GoW2_30FPS_Sin_Logs.zip --title 'GoW_PSDV2 — GoW2 30 FPS (sin diagnósticos) [prueba]' --notes-file release-notes.md --target "$GITHUB_SHA" --prerelease
