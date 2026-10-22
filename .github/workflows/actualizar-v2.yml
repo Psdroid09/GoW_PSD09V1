@@ -1,0 +1,29 @@
+name: Actualizar publicacion GoW_PSDV2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'release/NOTAS_V2.md'
+      - '.github/workflows/actualizar-v2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Actualizar título, descripción y estado de la Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: Psdroid09/GoW_PSD09V1
+        shell: bash
+        run: |
+          gh api --method PATCH repos/Psdroid09/GoW_PSD09V1/releases/420372939 \
+            -f 'name=GoW_PSDV2 — God of War Collection (sin diagnósticos)' \
+            -f "body=$(cat release/NOTAS_V2.md)" \
+            -F prerelease=false \
+            --jq '{name: .name, prerelease: .prerelease, html_url: .html_url}'
